@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pai</title>
+</head>
+<body>
+<script>
+    let number=parseInt(prompt("Enter a number ?"));
+    function isPrime(number) {
+        let check = true;
+        if (number == 1) {
+            check = false;
+        }
+        for (let i = 2;i <= Math.sqrt(number); i++) {
+            if (number % i == 0 ) {
+                check = false;
+                break;
+            }
+        }
+        return check ;
+    }
+    if (isPrime(number) == true ) {
+        document.write("true") ;
+    } else {
+        document.write("false") ;
+    }
+</script>
+</body>
+</html>

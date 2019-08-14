@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pai</title>
+</head>
+<body>
+    <script>
+        let a=[1,2,3,4,5,6,7,8,9,10,11];
+        console.log(a);
+        function isPrime(number) {
+            let check = true;
+            if (number == 1) {
+                check =false;
+            }
+            for (i=2;i <= Math.sqrt(number);i++) {
+                if (number % i == 0) {
+                    check = false;
+                }
+            }
+            return check;
+        }
+        function listPrime(arr) {
+            let b=" ";
+            for (i=0 ;i < arr.length; i++ ) {
+                if (isPrime(arr[i]) == true) {
+                  b +=arr[i];
+                }
+            }
+            return b;
+        }
+        let b = listPrime(a);
+        document.write(b.toString());
+
+
+        // bài này em làm không tìm được lỗi nếu được anh xem hộ em với ạ
+
+
+
+
+    </script>
+</body>
+</html>

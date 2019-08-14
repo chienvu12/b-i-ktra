@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pai</title>
+</head>
+<body>
+    <script>
+        let array = [[1,2,3],
+            [4,5,6],
+            [7,9,8]];
+        createArray(array);
+    function createArray(n) {
+        let newArray=[] ;
+        for (let i = 0 ;i<n.length;i++) {
+            if (i % 2 !== 0) {
+                n[i]=n[i].reverse();
+            }
+            newArray=newArray.concat(n[i]);
+        }
+        document.write(newArray);
+    }
+    </script>
+</body>
+</html>
